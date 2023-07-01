@@ -10,29 +10,38 @@
 # 3 6 9 12 15 18
 # 6 12
 
-# n = int(input('Введите кол-во элементов: '))
-# some_list = []
-# for _ in range(n):
-#      number = int(input())
-#      some_list.append(number)
-# print(f'Первый список: {some_list}')
+n = int(input('Введите кол-во элементов: '))
+some_list = []
+for _ in range(n):
+     number = int(input())
+     some_list.append(number)
+print(f'Первый список: {some_list}')
 
-# m = int(input('Введите кол-во элементов: '))
-# some_list2 = []
-# for _ in range(m):
-#      number1 = int(input())
-#      some_list2.append(number1)
-# print(f'Второй список: {some_list2}')
+m = int(input('Введите кол-во элементов: '))
+some_list2 = []
+for _ in range(m):
+     number1 = int(input())
+     some_list2.append(number1)
+print(f'Второй список: {some_list2}')
 
-# a = list(set(some_list) & set(some_list2))
-# print(f'Повторяющие цифры в списках: {sorted(a)}')
+a = list(set(some_list) & set(some_list2))
+print(f'Повторяющие цифры в списках: {sorted(a)}')
             
-# some_list3 = some_list + some_list2
-# list4 = []
-# for i in some_list3:
-#     if i not in list4:
-#          list4.append(i)
-# print(f'Объединеный список: {sorted(list4)}')
+some_list3 = some_list + some_list2
+list4 = []
+for i in some_list3:
+    if i not in list4:
+         list4.append(i)
+print(f'Объединеный список: {(list4)}')
+max = list4[0]
+min = list4[0]
+for i in range(len(list4)):
+    val = list4[i]
+    if val < min:
+        min = val
+    if val > max:
+        max = val
+print(f'В порядвке возрастания: {list4}')     
 
 
 # Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. Она растёт на 
@@ -51,3 +60,10 @@
 # 4 -> 1 2 3 4
 # 9
 
+
+# n = int(input('Введите кол-во элементов: '))
+# some_list = []
+# for _ in range(n):
+#      number = int(input())
+#      some_list.append(number)
+# print(f'Первый список: {some_list}')
